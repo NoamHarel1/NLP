@@ -1,9 +1,7 @@
 import pandas as pd
 from collections import Counter
 import time
-import nltk
-import spacy
-from bs4 import BeautifulSoup
+
 
 def calculate_time(func):
     def wrapper(*args, **kwargs):
@@ -44,3 +42,4 @@ def print_basic_statistics(csv_file_path):
 
 
 print_basic_statistics('spam.csv')
+
