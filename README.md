@@ -18,4 +18,8 @@ Make sure you have a Python programming environment set up. You can use any of t
 
 Install the necessary libraries using pip:
 ```bash
-pip install nltk spacy beautifulsoup4
+pip install nltk spacy beautifulsoup4 pandas
+```
+
+### 3. Database source
+https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset?resource=download&select=spam.csv
