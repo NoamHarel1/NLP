@@ -1,7 +1,22 @@
 import pandas as pd
 from collections import Counter
+import time
+import nltk
+import spacy
+from bs4 import BeautifulSoup
+
+def calculate_time(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f'Time taken: {end - start:.2f} seconds')
+        return result
+
+    return wrapper
 
 
+@calculate_time
 def print_basic_statistics(csv_file_path):
     df = pd.read_csv(csv_file_path, encoding='latin-1')
     df.columns = ['v1', 'v2', 'v3', 'v4', 'v5']
