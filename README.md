@@ -20,7 +20,6 @@ Install the necessary libraries using pip:
 ```bash
 pip install nltk spacy beautifulsoup4 pandas
 python -m spacy download en_core_web_sm
-
 ```
 
 ### 3. Database source
